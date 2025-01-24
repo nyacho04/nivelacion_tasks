@@ -2,12 +2,9 @@
 import random
 
 characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
-letter = (input("how many letters you like in your password?\n"))
-letter = int(letter)
-number = (input("how many numbers you like in your password?\n"))
-number = int(number)
-symbol = (input("how many symbols you like in your password?\n"))
-symbol = int(symbol)
+letter = int(input("how many letters you like in your password?\n"))
+number = int(input("how many numbers you like in your password?\n"))
+symbol = int(input("how many symbols you like in your password?\n"))
 
 password = ""
 for a in range(letter):
@@ -17,5 +14,7 @@ for b in range(number):
 for c in range(symbol):
 	password += random.choice("!@#$%^&*()_+")
 
-password += random.choice(characters)
-print("this is your password: ", password)
+password_list = list(password)
+random.shuffle(password_list)
+password = "".join(password_list)
+print("this is your password:", password)
