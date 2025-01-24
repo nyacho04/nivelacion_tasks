@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import random
 
-characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
 letter = int(input("how many letters you like in your password?\n"))
 number = int(input("how many numbers you like in your password?\n"))
 symbol = int(input("how many symbols you like in your password?\n"))
