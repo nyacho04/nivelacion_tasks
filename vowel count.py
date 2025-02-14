@@ -1,4 +1,4 @@
-def get_count(sentence)
+def get_count(sentence):
     aeiou = "aeiou"
     counter = 0
     for i in sentence:
